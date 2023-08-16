@@ -17,9 +17,10 @@ public class ShopRepository {
     public Product[] findAll() {
         return products;
     }
+
     public void remove(int id) {
 
-        Product productRemoving = findById (id);
+        Product productRemoving = findById(id);
         if (productRemoving == null) {
             throw new NotFoundException(id);
         }
@@ -40,7 +41,8 @@ public class ShopRepository {
             if (product.getId() == id) {
                 return product;
             }
-            
-        } return null;
+
+        }
+        return null;
     }
 }

@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ShopRepositoryTest {
 
     @Test
-    public void testRemoveProduct () {
+    public void testRemoveProduct() {
         ShopRepository repo = new ShopRepository();
 
         Product product1 = new Product(1, "Молоко", 50);
@@ -42,7 +42,7 @@ class ShopRepositoryTest {
     //   Assertions.assertArrayEquals(expected, actual);
     // }
     @Test
-    public void testRemoveWhenNotProduct () {
+    public void testRemoveWhenNotProduct() {
         ShopRepository repo = new ShopRepository();
 
         Product product1 = new Product(1, "Молоко", 50);
@@ -58,4 +58,4 @@ class ShopRepositoryTest {
         );
     }
 
-    }
+}
